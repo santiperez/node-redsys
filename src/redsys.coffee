@@ -73,7 +73,7 @@ class Redsys
       total: data.total
       currency: data.currency
       description: Utils.format data.description, 125
-      titular: Utils.format @config.merchant.titular, 60
+      titular: Utils.format data.titular, 60
       merchant_code: Utils.formatNumber @config.merchant.code, 9
       merchant_url: Utils.format data.redirect_urls?.callback, 250
       merchant_url_ok: Utils.format data.redirect_urls?.return_url, 250
